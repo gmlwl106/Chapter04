@@ -28,7 +28,11 @@ public class Ex01 {
 		System.out.println("----------------------");
 		
 		//중복체크
-		Integer i04 = 5;
+		Integer i04 = 14;
+		iset.add(i04);
+		for(Integer num : iset) {
+			System.out.println(num.toString());
+		}
 		
 		
 		
