@@ -1,20 +1,27 @@
 package com.javaex.ex04;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MyListApp {
 	public static void main(String[] args) {
 		
-		ArrayList<Point> pList = new ArrayList<Point>();
+		//ArrayList<Point> pList = new ArrayList<Point>();
+		List<Point> pList = new ArrayList<Point>();
+		//List<Point> pList = new LinkedList<Point>();
+		
 		
 		Point p01 = new Point(3,5);
 		Point p02 = new Point(13,15);
 		Point p03 = new Point(113,115);
 		Point p04 = new Point(1113,1115);
 		
+		Circle c01 = new Circle(5);
+		
 		pList.add(p01);
 		pList.add(p02);
 		pList.add(p03);
+		//pList.add(c01); //Circle은 담을수없다
 		
 		System.out.println(pList.size());
 		System.out.println(pList.get(0).getX());
@@ -25,6 +32,7 @@ public class MyListApp {
 		for(int i=0; i<pList.size(); i++) {
 			System.out.println(pList.get(i).toString());
 		}
+		
 		
 		pList.remove(p02); //=pList.remove(1);
 		System.out.println("---------------------------");
