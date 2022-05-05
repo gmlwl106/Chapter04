@@ -3,7 +3,7 @@ package com.javaex.ex01;
 public class Point {
 
 	//필드
-	int x, y;
+	private int x, y;
 
 	
 	
